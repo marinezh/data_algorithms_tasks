@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import Layout from "./Pages/Layout";
+import Palindrom from "./Components/Palindrom";
+import Task2 from "./Components/Task2";
+import Task3 from "./Components/Task3";
+import Task4 from "./Components/Task4";
+import Task5 from "./Components/Task5";
+import Home from "./Components/Home";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/palindrom" element={<Palindrom />} />
+          <Route path="/task2" element={<Task2 />} />
+          <Route path="/task3" element={<Task3 />} />
+          <Route path="/task4" element={<Task4 />} />
+          <Route path="/task5" element={<Task5 />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
