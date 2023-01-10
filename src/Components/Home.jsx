@@ -17,11 +17,6 @@ const Home = () => {
           <h3>Bubble sort</h3>
         </div>
       </NavLink>
-      <NavLink to="/task3">
-        <div className="taskdiv">
-          <h3>Selection sort</h3>
-        </div>
-      </NavLink>
       <NavLink to="/stackdata">
         <div className="taskdiv">
           <h3>
@@ -29,7 +24,7 @@ const Home = () => {
           </h3>
         </div>
       </NavLink>
-      <NavLink to="/task5">
+      <NavLink to="/queue">
         <div className="taskdiv">
           <h3>Queue data</h3>
         </div>

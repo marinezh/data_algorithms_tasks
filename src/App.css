@@ -15,9 +15,8 @@ main {
 
 .palindrom_task,
 .bubblesort_task,
-.task3,
 .stackdata_task,
-.task5 {
+.queue_task {
   max-width: 350px;
   height: 400px;
   background-color: rgb(251, 251, 191);
@@ -82,7 +81,8 @@ nav {
 
 .palindrom_task,
 .bubblesort_task,
-.stackdata_task {
+.stackdata_task,
+.queue_task {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -98,6 +98,7 @@ nav {
 
 input {
   height: 25px;
+  padding-left: 10px;
 }
 
 .sort_desc {
@@ -118,9 +119,12 @@ button {
   gap: 1rem;
 }
 
-.stack_result {
+.stack_result,
+.queue_result {
+  padding-left: 10px;
   background-color: white;
   border: solid black 1px;
   width: 250px;
   height: 50px;
+  border-radius: 5px;
 }

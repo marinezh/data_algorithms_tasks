@@ -11,11 +11,9 @@ const Nav = () => {
 
         <NavLink to="/bubblesort">Bubble sort</NavLink>
 
-        {/* <NavLink to="/task3">Selection sort</NavLink> */}
-
         <NavLink to="/stackdata">Stack data</NavLink>
 
-        <NavLink to="/task5">Queue data</NavLink>
+        <NavLink to="/queue">Queue data</NavLink>
       </ul>
     </nav>
   );

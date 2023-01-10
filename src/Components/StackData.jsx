@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const StackData = () => {
   const [stack, setStack] = useState([]);
-  const [input, setInput] = useState([]);
+  const [input, setInput] = useState("");
 
   const inputHandler = (e) => {
     setInput(e.target.value);
@@ -13,7 +13,7 @@ const StackData = () => {
     if (input.length) {
       setStack([...stack, input]);
     }
-    setInput([]);
+    setInput("");
     console.log(stack);
   };
 
@@ -21,7 +21,7 @@ const StackData = () => {
     if (stack.length > 0) {
       setStack(stack.slice(0, -1));
     } else {
-      setStack("");
+      setStack([]);
     }
   };
 
@@ -38,7 +38,7 @@ const StackData = () => {
         <input onChange={inputHandler} type="text" id="numbers" />
       </div>
 
-      <p className="stack_result">{stack.join(",")}</p>
+      <p className="stack_result">{stack.join(", ")}</p>
       <div className="pushpop_buttons">
         <button onClick={pushHandler}>Push</button>
         <button onClick={popHandler}>Pop</button>
