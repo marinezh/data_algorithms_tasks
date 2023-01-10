@@ -9,7 +9,7 @@ const Nav = () => {
 
         <NavLink to="/palindrom">Palindrome checker</NavLink>
 
-        <NavLink to="/task2">Bubble sort</NavLink>
+        <NavLink to="/bubblesort">Bubble sort</NavLink>
 
         <NavLink to="/task3">Selection sort</NavLink>
 

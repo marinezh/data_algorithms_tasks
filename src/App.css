@@ -8,7 +8,7 @@ body {
 }
 
 .palindrom_task,
-.task2,
+.bubblesort_task,
 .task3,
 .task4,
 .task5 {
@@ -62,7 +62,7 @@ nav {
 }
 
 .flextasks {
-  margin-top: 10rem;
+  margin-top: 6rem;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -70,15 +70,35 @@ nav {
   align-items: center;
 }
 
-.palindrom_task {
+.palindrom_task,
+.bubblesort_task {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
 
-.palindrom_task h2 {
-  margin-bottom: 3rem;
+.palindrom_task,
+.bubblesort_task h2 {
+  margin-bottom: 1rem;
+}
+
+input {
+  height: 25px;
+}
+
+.sort_desc {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 1rem;
+  margin-left: 2rem;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
 }

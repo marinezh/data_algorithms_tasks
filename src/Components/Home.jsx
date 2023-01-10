@@ -12,7 +12,7 @@ const Home = () => {
           </h3>
         </div>
       </NavLink>
-      <NavLink to="/task2">
+      <NavLink to="/bubblesort">
         <div className="taskdiv">
           <h3>Bubble sort</h3>
         </div>
