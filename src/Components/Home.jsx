@@ -22,7 +22,7 @@ const Home = () => {
           <h3>Selection sort</h3>
         </div>
       </NavLink>
-      <NavLink to="/task4">
+      <NavLink to="/stackdata">
         <div className="taskdiv">
           <h3>
             Stack data <br /> structure

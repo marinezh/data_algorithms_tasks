@@ -19,16 +19,16 @@ const Palindrom = () => {
     console.log("rw", reversedWord);
 
     if (reversedWord === word.toLowerCase())
-      SetResult(`${word} is a palindrome`);
-    else SetResult(`${word} is not a palindrome`);
+      SetResult(`${word} is a palindrome!`);
+    else SetResult(`${word} is not a palindrome!`);
   };
   return (
     <div className="palindrom_task">
       <h2>Palindrome checker</h2>
       <p>Check if the word is a palindrome or not ?</p>
       <div>
-        <label htmlFor="word"></label>
-        <input onChange={inputHandler} type="text" id="word" />
+        <label htmlFor="numbers"></label>
+        <input onChange={inputHandler} type="text" id="numbers" />
       </div>
       <button onClick={submitHandler}>Submit</button>
       <p>{result}</p>

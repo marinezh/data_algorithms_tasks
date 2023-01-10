@@ -26,7 +26,7 @@ const BubbleSort = () => {
         }
       }
     }
-    setResult(`Here are your sorted items: ${arr} `);
+    setResult(`Sorted items: ${arr} `);
   };
 
   return (
