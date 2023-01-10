@@ -9,7 +9,7 @@ const Queue = () => {
     setInput(e.target.value);
   };
 
-  const pushHandler = () => {
+  const queueHandler = () => {
     if (input.length) {
       setQueue([...queue, input]);
     }
@@ -17,9 +17,9 @@ const Queue = () => {
     console.log(queue);
   };
 
-  const popHandler = () => {
+  const dequeueHandler = () => {
     if (queue.length > 0) {
-      setQueue(queue.shift());
+      setQueue(queue.slice(1));
     } else {
       setQueue([]);
     }
@@ -35,8 +35,8 @@ const Queue = () => {
 
       <p className="queue_result">{queue.join(", ")}</p>
       <div className="pushpop_buttons">
-        <button onClick={pushHandler}>Queue </button>
-        <button onClick={popHandler}>Dequeue</button>
+        <button onClick={queueHandler}>Queue </button>
+        <button onClick={dequeueHandler}>Dequeue</button>
       </div>
     </div>
   );

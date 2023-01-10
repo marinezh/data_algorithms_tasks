@@ -6,10 +6,7 @@ const Home = () => {
     <div className="flextasks">
       <NavLink to="/palindrom">
         <div className="taskdiv">
-          <h3>
-            Palindrome <br />
-            checker
-          </h3>
+          <h3>Palindrome</h3>
         </div>
       </NavLink>
       <NavLink to="/bubblesort">
@@ -19,9 +16,7 @@ const Home = () => {
       </NavLink>
       <NavLink to="/stackdata">
         <div className="taskdiv">
-          <h3>
-            Stack data <br /> structure
-          </h3>
+          <h3>Stack data</h3>
         </div>
       </NavLink>
       <NavLink to="/queue">
